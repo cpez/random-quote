@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Settings</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+    
+    #yay,
+    #ooh {
+        display: none;
+    }
+    </style>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <a href="index.html"><i style="float: right" class="fa fa-home fa-3x"></i></a>
+            <h1>Settings <small>save your quotes here...</h1>
+            <div class="alert alert-success" id="yay">Your browser supports Web Storage. Yay!</div>
+            <div class="alert alert-danger" id="ooh">Oooh... Your browser seems to be retarded. He can't use Web Storage. Go get Chrome...</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Save a Quote</h3>
+                <form action="#" class="form-inline">
+                    <div class="form-group col-md-9">
+                        <input type="text" name="save" id="text" class="form-control" placeholder="quote me...">
+                    </div>
+                    <button id="set" class="btn btn-primary">save</button>
+                </form>
+                <hr>
+                <h3>Current Quotes</h3>
+                <div class="alert alert-info" id="val"><i>nothing saved...</i></div>
+                <button id="random" class="btn btn-success">Add Random Quote</button>
+                <button id="get" class="btn btn-success">Get Saved Quotes</button>
+                <button id="remove" class="btn btn-danger">Clear All Quotes</button>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/settings.js"></script>
+</body>
+
+</html>
